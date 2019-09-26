@@ -9,7 +9,8 @@ export default class PlayersInLine extends Component {
           counterAssistence: 0,
           counterGol: 0,
           playerName: this.props.playerName,
-          totalGols: this.props.totalGols
+          totalGols: this.props.totalGols,
+          golSum: []
         };       
     }
 
@@ -27,6 +28,12 @@ export default class PlayersInLine extends Component {
         this.setState({
             counterGol: this.state.counterGol + 1
         })
+
+        const eachGol = this.state.counterGol;
+        this.state.golSum.push(eachGol);
+        const currentGols = [...this.state.golSum];
+        this.setState({...this.state.golSum})
+        console.log(currentGols)
     }
 
     downDefense = () => {
@@ -48,23 +55,18 @@ export default class PlayersInLine extends Component {
     sendStats = () => {
         alert('Dados Enviados com Sucesso');
     }
-
-    upDateGol = () => {
-        this.setState({
-            totalGols: this.state.totalGols + this.state.counterGol
-        })
-    }
     
-    render() {
+    sumGols = () => {
+        
+    }
 
-        // const golSum = this.props.totalGols;
-        // console.log(golSum)
+    render() {
 
         return (
             <div>
                 
 
-                <div className="row">
+                <div className="row" golCount={this.props.golCount}>
                     <input className="player" type="text" name="playerName" defaultValue={this.props.playerName}/>
                     <div className="stat">
                         <input className="counter" type="number" name="Defense" value={this.state.counterDefense} readOnly/>
@@ -87,4 +89,5 @@ export default class PlayersInLine extends Component {
             </div>
         )
     }
+
 }

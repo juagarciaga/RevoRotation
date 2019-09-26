@@ -7,17 +7,25 @@ export class LineCalled extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            GolSum: 0
+            initialGol: 0,
+            totalGols: [],
+            counterGol: this.props.counterGol
         }
+    }
+
+    upDateGol = () => {
+        this.setState({
+            totalGols: this.state.totalGols + this.state.counterGol
+        })
     }
 
     render() {
         const players = dataPlayers;
+        // const golCounting = {this.props.counterGol}
 
-        // const golCounting = {this.props.GolSum}
         return (
             <div>
-                <form name="contact" method="POST" data-netlify="true">
+                <form name="contact" method="POST" netlify="true">
                     <div className="row rowHeader">
                         <p className="headerTable">Player</p>
                         <p className="headerTable">Defense</p>
@@ -25,13 +33,14 @@ export class LineCalled extends Component {
                         <p className="headerTable">Gol</p>
                     </div>
 
-                    {players.map(player => (
-                        <PlayersInLine playerName={player.name} golCounting={this.props.golCounting}/>
-                    ))}
+                    {players.map(player => {
+                        // console.log(player.counterGol);
+                        return <div><PlayersInLine playerName={player.name}/></div>
+                    })}
 
                     <p className="headerTable">
                         <span>Total:</span>
-                        <span>{this.state.GolSum}</span>
+                        <span onChange={this.upDateGol}>{this.props.golCount}</span>
                     </p>
 
                     <button className="largeBtn" type="submit" name="Submit" onClick={this.sendStats}>Enviar Estatisticas</button>

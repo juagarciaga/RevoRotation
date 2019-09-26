@@ -17,6 +17,7 @@ button {
     border: 0;
     box-shadow: none;
     outline: none;
+    cursor: pointer;
 }
 
 .largeBtn {
@@ -92,6 +93,7 @@ button {
             align-items: center;
             justify-content: center;
             color: #ffffff;
+            cursor: pointer;
         }
 
         .up {
