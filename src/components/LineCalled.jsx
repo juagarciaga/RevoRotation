@@ -7,18 +7,20 @@ export class LineCalled extends Component {
         const players = dataPlayers;
         return (
             <div>
-                <div className="row">
-                    <p className="headerTable">Player</p>
-                    <p className="headerTable">Defense</p>
-                    <p className="headerTable">Assistence</p>
-                    <p className="headerTable">Gol</p>
-                </div>
-                
-                {players.map(player => (
-                    <PlayersInLine playerName={player.name}/>
-                ))}
+                <form name="contact" method="POST" data-netlify="true">
+                    <div className="row">
+                        <p className="headerTable">Player</p>
+                        <p className="headerTable">Defense</p>
+                        <p className="headerTable">Assistence</p>
+                        <p className="headerTable">Gol</p>
+                    </div>
 
-                <button className="largeBtn" type="submit" name="Submit" onClick={this.sendStats}>Enviar Estatisticas</button>
+                    {players.map(player => (
+                        <PlayersInLine playerName={player.name}/>
+                    ))}
+
+                    <button className="largeBtn" type="submit" name="Submit" onClick={this.sendStats}>Enviar Estatisticas</button>
+                </form>
             </div>
         )
     }

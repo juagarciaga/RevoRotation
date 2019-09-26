@@ -55,21 +55,22 @@ export default class PlayersInLine extends Component {
                 
 
                 <div className="row">
-                    <p className="player">{this.props.playerName}</p>
+                    <input className="player" type="text" name="playerName" value={this.props.playerName}/>
+                    {/* <p className="player"></p> */}
                     <div className="stat">
-                        <p>{this.state.counterDefense}</p>
-                        <button className="up" onClick={this.upDefense}><span>+</span></button>
-                        <button className="down" onClick={this.downDefense}><span>-</span></button>
+                        <input className="counter" type="number" name="Defense" value={this.state.counterDefense}/>
+                        <div className="up" onClick={this.upDefense}><span>+</span></div>
+                        <div className="down" onClick={this.downDefense}><span>-</span></div>
                     </div>    
                     <div className="stat">
-                        <p>{this.state.counterAssistence}</p>
-                        <button className="up" onClick={this.upAssistence}><span>+</span></button>
-                        <button className="down" onClick={this.downAssistence}><span>-</span></button>
+                        <input className="counter" type="number" name="Defense" value={this.state.counterAssistence}/>
+                        <div className="up" onClick={this.upAssistence}><span>+</span></div>
+                        <div className="down" onClick={this.downAssistence}><span>-</span></div>
                     </div>    
                     <div className="stat">
-                        <p>{this.state.counterGol}</p>
-                        <button className="up" onClick={this.upGol}><span>+</span></button>
-                        <button className="down" onClick={this.downGol}><span>-</span></button>
+                        <input className="counter" type="number" name="Defense" value={this.state.counterGol}/>
+                        <div className="up" onClick={this.upGol}><span>+</span></div>
+                        <div className="down" onClick={this.downGol}><span>-</span></div>
                     </div>    
                 </div>
 
