@@ -17,7 +17,7 @@ export class LineCalled extends Component {
         // const golCounting = {this.props.GolSum}
         return (
             <div>
-                <form name="contact" method="POST" data-netlify="true" action="/">
+                <form name="contact" method="POST" data-netlify="true">
                     <div className="row rowHeader">
                         <p className="headerTable">Player</p>
                         <p className="headerTable">Defense</p>
