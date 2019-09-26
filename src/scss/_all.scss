@@ -28,9 +28,13 @@ button {
     color: #ffffff;
 }
 
+// .rowHeader {
+//     border-bottom: 1px solid #ffffff;
+// }
+
 .row {
     display: flex;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
     .player {
         width: 25%;
@@ -38,8 +42,8 @@ button {
         display: flex;
         padding-left: 2px;
         border: none;
-        border-bottom: 1px solid;
-        border-right: 2px solid #ffffff;
+        // border-bottom: 1px solid;
+        // border-right: 2px solid #ffffff;
         background: #1c222d;
         color: #ffffff;
         font-size: 100%;
@@ -53,12 +57,20 @@ button {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 50% 50%;
-        border-right: 1px solid #ffffff;
+        // border-right: 1px solid #ffffff;
 
         // color: #a45f66;
         // color: #75e0e9;
         // color: #6f813c;
         // color: #d4995e;
+
+        &:nth-child(odd) {
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            // input {
+            //     background: #1c222d;
+            // }
+        }
 
         .counter {
             background: #222935;
