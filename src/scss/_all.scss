@@ -38,7 +38,7 @@ button {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
     .player {
-        width: 25%;
+        width: 20%;
         align-items: center;
         display: flex;
         padding-left: 2px;
@@ -52,11 +52,11 @@ button {
     }
 
     .stat {
-        width: 25%;
+        width: 20%;
         background: #222935;
         color: #ffffff;
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-rows: 50% 50%;
         // border-right: 1px solid #ffffff;
 
@@ -75,7 +75,7 @@ button {
 
         .counter {
             background: #222935;
-            grid-column: span 4;
+            grid-column: span 5;
             text-align: center;
             border: 0;
             color: #ffffff;
@@ -101,13 +101,14 @@ button {
             background: rebeccapurple;
         }
         .down {
+            grid-column: span 2;
             background: gray;
         }
     }
 }
 
 .headerTable {
-    flex: 0 0 25%;
+    flex: 0 0 20%;
     text-align: center;
     padding: 7px 0;
     // border-right: 1px solid #ffffff;

@@ -19,17 +19,22 @@ export class LineCalled extends Component {
         })
     }
 
+    sendStats = () => {
+        alert('Dados Enviados com Sucesso');
+    }
+
     render() {
         const players = dataPlayers;
         // const golCounting = {this.props.counterGol}
 
         return (
             <div>
-                <form name="contact" method="POST" netlify="true">
+                <form >
                     <div className="row rowHeader">
-                        <p className="headerTable">Player</p>
-                        <p className="headerTable">Defense</p>
-                        <p className="headerTable">Assistence</p>
+                        <p className="headerTable">Jogador</p>
+                        <p className="headerTable">TurnOver</p>
+                        <p className="headerTable">Defensa</p>
+                        <p className="headerTable">Asistencia</p>
                         <p className="headerTable">Gol</p>
                     </div>
 
@@ -38,12 +43,12 @@ export class LineCalled extends Component {
                         return <div><PlayersInLine playerName={player.name}/></div>
                     })}
 
-                    <p className="headerTable">
+                    {/* <p className="headerTable">
                         <span>Total:</span>
                         <span onChange={this.upDateGol}>{this.props.golCount}</span>
-                    </p>
+                    </p> */}
 
-                    <button className="largeBtn" type="submit" name="Submit" onClick={this.sendStats}>Enviar Estatisticas</button>
+                    <button className="largeBtn" onClick={this.sendStats}>Enviar Estatisticas</button>
                 </form>
             </div>
         )

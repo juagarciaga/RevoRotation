@@ -7,6 +7,7 @@ export default class PlayersInLine extends Component {
           counter: 0,
           counterDefense: 0,
           counterAssistence: 0,
+          counterTurnOnver: 0,
           counterGol: 0,
           playerName: this.props.playerName,
           totalGols: this.props.totalGols,
@@ -36,6 +37,12 @@ export default class PlayersInLine extends Component {
         console.log(currentGols)
     }
 
+    downGol = () => {
+        this.setState({
+            counterGol: this.state.counterGol - 1
+        })
+    }
+
     downDefense = () => {
         this.setState({
             counterDefense: this.state.counterDefense - 1
@@ -46,18 +53,16 @@ export default class PlayersInLine extends Component {
             counterAssistence: this.state.counterAssistence - 1
         })
     }
-    downGol = () => {
-        this.setState({
-            counterGol: this.state.counterGol - 1
-        })
-    }  
 
-    sendStats = () => {
-        alert('Dados Enviados com Sucesso');
+    upTurnOnver = () => {
+        this.setState({
+            counterTurnOnver: this.state.counterTurnOnver + 1
+        })
     }
-    
-    sumGols = () => {
-        
+    downTurnOnver = () => {
+        this.setState({
+            counterTurnOnver: this.state.counterTurnOnver - 1
+        })
     }
 
     render() {
@@ -68,6 +73,11 @@ export default class PlayersInLine extends Component {
 
                 <div className="row" golCount={this.props.golCount}>
                     <input className="player" type="text" name="playerName" defaultValue={this.props.playerName}/>
+                    <div className="stat">
+                        <input className="counter" type="number" name="Defense" value={this.state.counterTurnOnver} readOnly/>
+                        <div className="up" onClick={this.upTurnOnver}><span>+</span></div>
+                        <div className="down" onClick={this.downTurnOnver}><span>-</span></div>
+                    </div>    
                     <div className="stat">
                         <input className="counter" type="number" name="Defense" value={this.state.counterDefense} readOnly/>
                         <div className="up" onClick={this.upDefense}><span>+</span></div>

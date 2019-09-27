@@ -1,90 +1,58 @@
 [
     {
-        "name": "nat",
+        "name": "Bi",
         "gender": "F"
     },
     {
-        "name": "bi ",
+        "name": "Cris",
         "gender": "F"
     },
     {
-        "name": "sa",
+        "name": "Gaba",
         "gender": "F"
     },
     {
-        "name": "mi",
+        "name": "Ju",
         "gender": "F"
     },
     {
-        "name": "aline",
+        "name": "Na",
         "gender": "F"
     },
     {
-        "name": "cris",
+        "name": "Pri",
         "gender": "F"
     },
     {
-        "name": "ju",
-        "gender": "F"
-    },
-    {
-        "name": "pri",
-        "gender": "F"
-    },
-    {
-        "name": "gaba",
-        "gender": "F"
-    },
-    {
-        "name": "mari",
-        "gender": "F"
-    },
-    {
-        "name": "gus",
+        "name": "DiSalvi",
         "gender": "M"
     },
     {
-        "name": "seba",
+        "name": "Doug",
         "gender": "M"
     },
     {
-        "name": "robbie",
+        "name": "Gus",
         "gender": "M"
     },
     {
-        "name": "kevin",
+        "name": "Jeff",
         "gender": "M"
     },
     {
-        "name": "vitor",
+        "name": "Rafa",
         "gender": "M"
     },
     {
-        "name": "paolo",
+        "name": "Robbie",
         "gender": "M"
     },
     {
-        "name": "diSalvi",
+        "name": "Sebá",
         "gender": "M"
     },
     {
-        "name": "rafa",
-        "gender": "M"
-    },
-    {
-        "name": "edu",
-        "gender": "M"
-    },
-    {
-        "name": "luis",
-        "gender": "M"
-    },
-    {
-        "name": "jef",
-        "gender": "M"
-    },
-    {
-        "name": "nilau",
+        "name": "Vitor",
         "gender": "M"
     }
 ]
