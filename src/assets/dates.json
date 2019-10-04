@@ -1,9 +1,5 @@
 [
     {
-        "name": "Bi",
-        "gender": "F"
-    },
-    {
         "name": "Cris",
         "gender": "F"
     },
@@ -16,43 +12,23 @@
         "gender": "F"
     },
     {
-        "name": "Na",
+        "name": "Ma",
         "gender": "F"
     },
     {
-        "name": "Pri",
+        "name": "Mi",
         "gender": "F"
     },
     {
-        "name": "DiSalvi",
-        "gender": "M"
+        "name": "Nah",
+        "gender": "F"
     },
     {
-        "name": "Doug",
-        "gender": "M"
+        "name": "Naka",
+        "gender": "F"
     },
     {
-        "name": "Gus",
-        "gender": "M"
-    },
-    {
-        "name": "Jeff",
-        "gender": "M"
-    },
-    {
-        "name": "Rafa",
-        "gender": "M"
-    },
-    {
-        "name": "Robbie",
-        "gender": "M"
-    },
-    {
-        "name": "Sebá",
-        "gender": "M"
-    },
-    {
-        "name": "Vitor",
-        "gender": "M"
+        "name": "Sa",
+        "gender": "F"
     }
 ]
